@@ -1,7 +1,9 @@
 'use strict';
-var apiKey;
-chrome.storage.sync.get("api_key", function (data) {
-  apiKey =  data.api_key;
+//null returns all keys
+chrome.storage.sync.get(null, function (data) {
+  var allKeys = Object.keys(data);
+  var apiKey =  data.api_key;
+  var imageType = data.imageType;
   if(!apiKey){
     apiKey = "NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo";
   }
@@ -29,7 +31,7 @@ chrome.storage.sync.get("api_key", function (data) {
       
       if(result.media_type == "video") {
         $("#apod_img_id").css("display", "none");
-        $("#apod_vid_id").attr("src", result.url);
+        $("#apod_vid_id").attr("src", result.imageType);
       }
       else {
         $("#apod_vid_id").css("display", "none");

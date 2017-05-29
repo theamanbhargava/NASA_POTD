@@ -23,8 +23,11 @@
     <body>
     <h1>Get your key from <a href="https://api.nasa.gov/index.html#apply-for-an-api-key">NASA</a>(Right click and open)</h1>
     API key :
-    <input type="text" id="api_key">
-    <button id="save">Save</button>
+      <input type="text" id="api_key">
+      High Definition<input type="radio" id="r1" name="quality" value="hdurl">
+      Non-HD<input type="radio" id="r2" name="quality" value="url">
+      <button id="save">Save</button>
+
     <!-- build:js scripts/popup.js -->
     <script src="scripts.babel/popup.js"></script>
     <!-- endbuild -->
