@@ -1,0 +1,30 @@
+body, html {
+  margin: 0;
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#content, h3, footer{
+  color: white;
+}
+
+#content{
+  position: absolute;
+  bottom: 0;
+}
+
+#content{
+  background-color: rgba(0,0,0,.5);
+  border: 0px dashed rgba(222,222,222,.5);
+  size: 30%;
+}
